@@ -5,23 +5,32 @@ import ReactPlayer from "react-player";
 
 export default function ViewCats() {
   return (
-    <Box
-      sx={{
-        my: 8,
-        mx: 4,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=JYzkGe1G1RE"
-        playing
-        className="react-player"
-        width={600}
-        height={600}
-      />
+    <div>
+      <Box
+        sx={{
+          my: 8,
+          mx: 4,
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+        }}
+      >
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=JYzkGe1G1RE"
+          playing
+          className="react-player"
+          width={600}
+          height={600}
+        />
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=JYzkGe1G1RE"
+          playing
+          className="react-player"
+          width={600}
+          height={600}
+        />
+      </Box>
       <Switch />
-    </Box>
+    </div>
   );
 }
